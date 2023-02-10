@@ -1,0 +1,53 @@
+- A função find() encontra a primeira ocorrência do texto que estamos procurando e devolve o índice. Lembrando também que o índice começa com 0.
+	- A função find encontra a primeira ocorrência do texto que estamos procurando e devolve o índice. Lembrando também que o índice começa com 0.
+	-  find também aceita um segundo parâmetro, que define a partir de qual posição gostaríamos de começar.
+	
+
+- função lower() deixa tudo minusculo
+
+- função strip() remove os espaços
+
+- O primeiro item de uma Lista, temos sempre que lembrar que as listas começam contando do índice 0.
+
+- Para verificar se um determinado elemento existe em uma Lista, podemos utilizar o operador in.Ele nos retorna True ou False caso o elemento esteja ou não dentro da lista verificada.
+	Exemplo:
+		frutas = ['Banana', 'Maca', 'Pera', 'Uva', 'Melancia', 'Jamelão']
+
+		fruta_pedida = input('Qual é a fruta que deseja consultar ?')
+
+		if(fruta_pedida in frutas):
+		    print ('Sim, temos a fruta.')
+		else:
+    		    print ('Não temos a fruta.')
+    		    
+    		  
+- A função min nos retorna o menor item de uma lista.Assim como temos a função min() que nos retorna o menor item da Lista, também temos a função max() que nos retorna o maior item da mesma.Exemplo:
+	
+	precos = [1525,1120,1464,1200,1330,1356,1312,1531,1232]
+	
+	print( min(precos))
+	
+-  A função len() retorna a quantidade de itens das listas. Exemplo?
+	['Astrid','Flavia','Talia', ... ,'Mauricio', 'Waldemar', 'Marina']
+	print(len(funcionarios))
+	
+	
+- A função count() conta o número de items na lista de acordo com o passo no parametro. Exemplo:
+	valores = [ 0, 0, 0, 1, 2, 3, 4]
+	print(valores.count(0))
+	
+- A função index() retorna o índice da primeira ocorrência de um determinado elemento em uma lista. Exemplo:
+	frutas = ['Banana', 'Morango', 'Maçã', 'Uva', 'Maçã', 'Uva']
+	print(frutas.index('Uva'))
+Um ponto de atenção que se tentarmos ver um item que não tem na lista dará erro , pois não irá encontrar o index. Uma forma é validarmos antes se existe o item dentro da lista antes de pegarmos o index dela. Exemplo:
+	frutas = ['Banana', 'Morango', 'Maçã', 'Uva']
+
+	fruta_buscada = 'Melancia'
+	if fruta_buscada in frutas:
+	    print(frutas.index(fruta_buscada))
+	else:
+	    print('Desculpe, a {} não está na lista frutas'.format( fruta_buscada))
+	
+	
+
+	

@@ -1,0 +1,61 @@
+- Funções em python sempre acabar com () no final , exemplo print("Olá mundo")
+
+Ver a documentação do python posso utilizar no console o  python3 e utilizar o help() 
+assim abre a documentação do python ai consigo passar o nome da função na qual quero ver a documentação exemplo print()
+
+No print tem o separador que utilizamos para falarmos como queremos separar as strings
+exemplo print("Brasil", "Ganhou", sep="-", end="!\n") com isso vai separar os textos com -. Temos também o end que passamos o que queremos que aconteça no final do print , como nesse caso colocar um ! e quebrar linha.
+
+Temos a função type(variavel) para sabermos o tipo da variavel.
+
+Tipagem do Python
+	No python não definimos o tipo da variavel explicitamente.
+	
+Para o usuário poder digitar no console usamos o comando input() exemplo:
+	input("Digite o seu numero")
+	A função input sempre devolve um tipo string
+	
+Diferenças entre o Python2 e o Python3
+	- No python3 eu preciso passar o print entre () no dois ele aceita sem.
+	
+- Syntax sugar do mundo Python. Um syntax sugar, açúcar sintático da linguagem, apenas simplifica algo que seria trabalhoso, mas não muda a característica da linguagem. Então, ao invés de escrever dez vezes o número 20, podemos simplificar e escrever 10 * "20"
+	
+	
+Formatação de String:
+	- print("Tentativa: {} de {}".format(rodada, total_de_tentativas))
+	- Utilizamos a função format para passar para as chaves os valores das variaveis.
+	
+Laço for:
+	- for contador in range(1, 11):
+    		print(contador)
+    	- A posição final é não-inclusiva, por isso que para imprimirmos de 1 até 10, usamos 11 como posição final.
+    	- for contador in range(1,11,3):
+    		print(contador)
+    	- Usamos esse terceiro parametro para dizer com quantos numeros vai ser interado, o padrão é 1.
+    	- A função range(start, stop, [step]) onde o step é opcional. Ai passamos o número que queremos interar como pular de 3 em 3 passariamos o número 3.
+    	- Nos laços de repetições temos também o o break e continue, o break sai do bloco do laço abruptamente, continue apenas pula para próxima iteração.
+    	
+
+No Python tem interporlação de String.
+	- https://docs.python.org/3/library/string.html#formatexamples
+    	- print("Ola Sr.{0} {1}".format("Cordeiro","Leonardo"))
+    	- Com o .format(), podemos especificar a ordem em que os parâmetros aparecem na string, basta apenas colocar entre as chaves ({}) da string formatada qual parâmetro você quer exibir.
+    	
+Gerar um número aleatoriamente:
+	- Precisamos importar o biblioteca random
+	- random.random() * 100 desta maneira conseguimos gerar um número aleatorio e multiplicamos por 100 pois vem em casas decimais.
+	- temos a função round(random.random() * 100) que usamos para arredondar o número.
+	- random.randrange(1,101) temos essa função randrange que passamos os delimitadores que queremos que gere por exemplo nesse caso gera os numeros 1 a 100.
+	- A função random.randrange(10) quando só possuí um parâmetro supõe que você quer dizer de zero até número passado -1, ou seja, neste caso, o menor número possível irá ser o 0 e o maior o 9.s
+	
+A função abs(50 - 80) está função desconsidera o sinal nesse caso seria -30 mas ele pega o número absoluto.
+
+
+- Quando queremos executar a função da classe . Utilizamos:
+	- def executa():
+    		print("Executando a")
+
+	if(__name__ == "__main__"):
+    		executa()
+
+- O senso comum é que o Python é uma linguagem interpretada. Interpretado significa que não há um processo de compilação que traduz o código fonte em algum código nativo, que o seu computador entende.
